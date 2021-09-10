@@ -7,6 +7,7 @@ a {
   -o-transition: background-color 0.15s linear, color 0.15s linear;
   -ms-transition: background-color 0.15s linear, color 0.15s linear;
   transition: background-color 0.15s linear, color 0.15s linear;
+  cursor: pointer;
 }
 a:hover {
   color: #000;

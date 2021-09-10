@@ -14,6 +14,9 @@ import Footer from "./Components/Layout/Footer";
 import Home from "./Components/Pages/HomeScreen";
 import Films from "./Components/Pages/FilmsScreen";
 
+
+
+
 function App() {
   return (
     <Router>

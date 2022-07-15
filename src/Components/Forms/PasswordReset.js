@@ -66,7 +66,7 @@ class PasswordReset extends Component {
         return (
             // <AuthWrapper {...configAuthWrapper}>
             <>
-                <div className="container user-auth-form__holder  p-5">
+                <div className="user-auth-form__holder p-5">
                     <h2 className="user-auth__heading">E-mailadres/Wachtwoord vergeten</h2>
                     <p>
                         Hoe wil je je wachtwoord resetten?

@@ -1,11 +1,11 @@
 
 const movieDataRequests = {
-  fetchZeroes: `discovery/desc/true/1/2000/Drama`,
-  fetchNineties: `discovery/desc/true/1/1990/Drama`,
-  fetchEighties: `discovery/desc/true/2/1980/Drama`,
-  // fetchDisney:
-  // fetchActor:
-  fetchComedy: `discovery/desc/true/1/2021/Comedy`,
+  fetchZeroes: `discovery/desc/true/1/2000/Action`,
+  fetchNineties: `discovery/desc/true/1/1995/Adventure`,
+  fetchEighties: `discovery/desc/true/1/1980/Drama`,
+  // fetchDisney: `discovery/disney/esc/true/1/2020/disney`,
+  // fetchActor: `cast/ryanreynolds`,
+  fetchComedy: `discovery/desc/true/1/2020/Comedy`,
   fetchAction: `discovery/desc/true/1/2021/Action`,
   fetchThriller: `discovery/desc/true/1/2021/Thriller`,
   fetchFamily: `discovery/desc/true/1/2021/Family`,

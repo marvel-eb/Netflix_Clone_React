@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Button from "./Button";
 // import { signInWithGoogle, auth } from "../../firebase/utils";
-import { auth } from "../../firebase/utils";
+
+import { signInWithGoogle, auth } from "../../firebase/utils";
 import FormInput from "./FormInput";
-import { FaFacebookF } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
 
 // using ES6 modules
 import { Link } from "react-router-dom";
@@ -88,7 +89,7 @@ class SignIn extends Component {
 
                         <div class="form__separator---">
                             <span className="form__label">
-                                <Link to="/Recovery">
+                                <Link to="/RecoveryScreen">
                                     <font>Forgot your password? Reset</font>
                                 </Link>
                             </span>
@@ -126,14 +127,23 @@ class SignIn extends Component {
                         </div>
 
                         <div>
-                            <FaFacebookF className="fb-login" />
-                            <Link to="#">Inloggen met Facebook</Link>
+                            <FaGoogle className="fb-login" />
+                            <Link to="#" onClick={signInWithGoogle}>Inloggen met Google</Link>
+
+                            {/* 
+                            <Button
+                                className="btn btn--signIn-google"
+                                onClick={signInWithGoogle}
+                            >
+                                SignIn with Google
+                            </Button> */}
+
                         </div>
                         <br />
                         <div>
                             <p>
                                 Is Netflix nieuw voor jou?{" "}
-                                <Link to="/Registration">Registreer je nu</Link>
+                                <Link to="/RegistrationScreen">Registreer je nu</Link>
                             </p>
                         </div>
                         <p className="">

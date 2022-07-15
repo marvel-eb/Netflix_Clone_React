@@ -44,7 +44,17 @@ const Recovery = (props) => {
       </Navbar>
 
       <div className="container py-5">
-        <PasswordReset />;
+        <div class="row">
+          <div class="col-12 col-md-8 mx-auto">
+            <div class="jumbotron bg-transparent">
+              <div class="row text-center">
+                <div class="text-center col-12">
+                  <PasswordReset />;
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <FooterGuest {...props} />
     </div>

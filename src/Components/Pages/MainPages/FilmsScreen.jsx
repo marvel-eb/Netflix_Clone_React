@@ -8,13 +8,13 @@ import CatOverview from "../../Contents/MovieContents/CatOverview";
 import FilmsCategories from "../../Contents/MovieContents/FilmsCategories";
 import FilmsImage from "../../../Assets/images/slider/netflix-films-banner-01.jpg";
 
-const Films = () => {
+const Films = (props) => {
   return (
     <>
       <Header />
       <div className="films-container">
         <FeaturedBanner image={FilmsImage} />
-        <CatOverview categories={<FilmsCategories />} />
+        <CatOverview categories={<FilmsCategories props={props} />} />
       </div>
       <Footer />
     </>

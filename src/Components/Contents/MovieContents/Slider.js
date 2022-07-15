@@ -15,6 +15,7 @@ import data from "../../../data/moviedData";
 // } from "@fortawesome/free-regular-svg-icons";
 
 import { FaPlay, FaPlus, FaChevronDown, FaThumbsUp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Slider() {
     const moviesExample = data.results;
@@ -48,7 +49,7 @@ function Slider() {
                                         </li>
                                         <li>
                                             {/* <FontAwesomeIcon icon={farThumbDown} /> */}
-                                            <FaChevronDown />
+                                            <Link to="modal/:id"><FaChevronDown /></Link>
                                         </li>
                                     </ul>
                                     <ul className="right-buttons">

@@ -14,7 +14,7 @@ const Home = (props) => {
       <Header />
       <div className="home-container">
         <FeaturedBanner image={HomeImage} />
-        <CatOverview categories={<HomeCategories />} />
+        <CatOverview categories={<HomeCategories props={props} />}/>
       </div>
 
       <Footer />

@@ -13,10 +13,16 @@
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .login-page {
+  .user-auth-form__holder {
     width: 100%;
   }
-  .login-page-bg {
+  // @media (min-width: 560px) {
+  //   .user-auth-form__holder {
+  //     width: 550px;
+  //   }
+  // }
+  .user-auth-page-bg__holder,
+  .user-auth-page-bg__holder img {
     display: none;
   }
 }

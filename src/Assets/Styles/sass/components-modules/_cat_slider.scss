@@ -1,8 +1,9 @@
-//============== (MH)==================
 
-.cat-slider-container {
-  margin-bottom: 100px;
-}
+// .cat-slider-container {
+//   position: relative; 
+//   top: -50px;
+// }
+
 
 // == MAIN__CATEGORY__MOVIE__SLIDER ==
 ///////////////////////////////////////////////////////
@@ -125,9 +126,9 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .movie__thumbnail {
-    // max-height: 260px;
-  }
+  // .movie__thumbnail {
+  //   max-height: 260px;
+  // }
   .movie__thumbnail-lg {
     max-height: 340px;
   }

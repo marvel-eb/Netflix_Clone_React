@@ -10,7 +10,7 @@ import React from "react";
 
 
 
-const CatOverview = ({categories}) => {
+const CatOverview = ({categories, props}) => {
     return (
         <div className="cat-overview-container">
         {categories} 

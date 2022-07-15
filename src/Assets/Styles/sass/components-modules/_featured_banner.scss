@@ -48,7 +48,7 @@
   padding-top: 140px;
   height: 190px;
   position: relative;
-  z-index: 999;
+  z-index: 5;
 }
 
 .featured_banner__title {
@@ -74,7 +74,7 @@
     180deg,
     transparent,
     rgba(37, 37, 37, 0.61),
-    #111
+    $background-color
   );
 }
 @media (min-width: 1500px) {

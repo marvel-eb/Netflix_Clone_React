@@ -64,15 +64,31 @@ const HeaderNav = (props) => {
                     />
                     <img className="avator" src={avator} alt="avator" />
                     <NavDropdown title="" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#">Something 1</NavDropdown.Item>
-                        <NavDropdown.Item href="#">Something 2</NavDropdown.Item>
-                        <NavDropdown.Item href="#">Something 3</NavDropdown.Item>
+                        <NavDropdown.Item href="#">User 1</NavDropdown.Item>
+                        <NavDropdown.Item href="#">User 2</NavDropdown.Item>
+                        <NavDropdown.Item href="#">Profilen Beheren</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">
 
+                        <NavDropdown.Item href="DashboardScreen">
+                            Account
+
+                        </NavDropdown.Item>
+
+
+                        <NavDropdown.Item href="#">
+                            Helpcentrum
+
+                        </NavDropdown.Item>
+
+
+                        <NavDropdown.Item >
                             <LogOutScreen />
                         </NavDropdown.Item>
+
+
                     </NavDropdown>
+
+
                 </Navbar.Collapse>
             </Navbar>
         </>

@@ -85,7 +85,7 @@ class SignUp extends Component {
             errors,
         } = this.state;
         return (
-            <div className="container user-auth-form__holder p-5">
+            <div className="user-auth-form__holder p-5">
                 <form className="user-auth__form" onSubmit={this.handleFormSubmit}>
                     {/* Error Display Info  */}
 
@@ -136,14 +136,14 @@ class SignUp extends Component {
                             placeholder="Confirm Password"
                             onChange={this.handleChange}
                         />
-                        {/* 
+
                         <FormInput
                             type="text"
                             name="profession"
                             value={profession}
                             placeholder="Your Profession"
                             onChange={this.handleChange}
-                        /> */}
+                        />
 
                         <FormInput
                             type="number"

@@ -12,6 +12,7 @@ $sbtl: $search-box-transition-length;
 .search {
   &-container {
     padding: 20px;
+    margin-top: 5px;
   }
 
   &-box {
@@ -54,7 +55,7 @@ $sbtl: $search-box-transition-length;
       cursor: text;
       outline: none;
       padding-left: 15px;
-      transition: width $sbtl cubic-bezier(0, 1.22, 0.66, 1.39),
+      transition: width $sbtl cubic-bezier(0, 1.22, 0.66, 1),
         border-radius $sbtl, background $sbtl;
       width: 300px;
 
@@ -72,9 +73,9 @@ $sbtl: $search-box-transition-length;
 
   &-icon {
     cursor: pointer;
-    left: -31px;
+    left: -35px;
     position: relative;
-    top: 2px;
+    bottom: 1px;
   }
 
   &-btn {

@@ -9,10 +9,11 @@ const Footer = () => {
         <div className="container text-white-50 p-4">
           <div className="row">
             <div className="col-md-4 col-lg-5 col-6">
+
               <Social />
               <FooterCallaction />
             </div>
-            <div className="col-6 col-md-8 col-lg-7">
+            <div className="col-6 col-md-8 col-lg-7 pt-5 mt-3">
               <FooterLinks />
             </div>
           </div>

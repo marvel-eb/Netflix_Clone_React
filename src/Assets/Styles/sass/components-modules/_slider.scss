@@ -1,0 +1,132 @@
+// @use './colors';
+// @use './typography';
+
+#landing-page {
+  background-color: #221f1f /*$background-color*/;
+  color: #f5f5f1 /*$font-color*/;
+
+  & > div:nth-of-type(1) {
+    height: 43.125rem;
+    background-size: auto;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.144)
+      ),
+      url("https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/897182ab-a592-4015-9372-5047825c92df/NL-nl-20210823-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.144)
+      ),
+      url("https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/897182ab-a592-4015-9372-5047825c92df/NL-nl-20210823-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    margin-bottom: 8px;
+
+    #nav {
+      height: 6.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 9.375rem;
+
+      #logo {
+        width: 13rem;
+        padding: 1.5rem;
+        margin-top: 5rem;
+        margin-left: 1.875rem;
+        z-index: 1;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+      button {
+        height: 2.5rem;
+        color: #f5f5f1 /*$font-color*/;
+        background-color: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgb(170, 170, 170);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 3px;
+        padding-left: 7px;
+        padding-right: 7px;
+        margin-top: 2rem;
+        margin-right: 1.875rem;
+
+        &:hover {
+          border: 1px solid #047bf5 /*$alt-color*/;
+        }
+
+        + button {
+          background-color: #e50914 /*$primary-color*/;
+          border: none;
+          line-height: normal;
+          padding: 0 1.25rem;
+          margin-right: 3.125rem;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+      }
+
+      h1,
+      h5,
+      p {
+        text-align: center;
+      }
+
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+          height: 3.75rem;
+          width: 40%;
+          max-width: 43.75rem;
+        }
+
+        button {
+          height: 3.75rem;
+          width: 20%;
+          max-width: 12.5rem;
+          color: #f5f5f1 /*$font-color*/;
+          background-color: #e50914 /*$primary-color*/;
+        }
+      }
+    }
+
+    & > div:nth-of-type(2) {
+      display: flex;
+      background-color: black;
+
+      div {
+        height: 31.25rem;
+      }
+
+      h2 {
+        margin-top: 9.375rem;
+        margin-left: 6.25rem;
+        margin-bottom: 1.875rem;
+      }
+
+      p {
+        margin-left: 6.25rem;
+      }
+
+      img {
+        position: relative;
+        z-index: 2;
+      }
+
+      video {
+        display: inline-block;
+        position: relative;
+        left: 5rem;
+        bottom: 24.375rem;
+        z-index: 1;
+      }
+    }
+  }
+}

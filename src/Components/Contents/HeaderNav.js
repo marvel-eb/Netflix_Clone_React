@@ -1,66 +1,93 @@
-
-import React, { useState, useEffect, useRef } from "react";
-// import { Link } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../Assets/images/netflix-logo.svg";
 import SearchBar from "../Contents/SearchBar";
-import avator from "../../Assets/images/Netflix-avatar.png";
-import { Nav, Navbar, NavDropdown, Collapse } from "react-bootstrap";
 
 const HeaderNav = (props) => {
-    const [navBackground, setNavBackground] = useState(false);
-    const navRef = useRef();
-    navRef.current = navBackground;
-    useEffect(() => {
-        const handleScroll = () => {
-            const show = window.scrollY > 50;
-            if (navRef.current !== show) {
-                setNavBackground(show);
-            }
-        };
-        document.addEventListener("scroll", handleScroll);
-        return () => {
-            document.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
     return (
         <>
-            <Navbar
-                collapseOnSelect
-                expand="lg"
-                variant="dark"
-                className="navbar navbar-expand-lg navbar-dark  fixed-top text-white-50"
-                style={{
-                    transition: "1s ease",
-                    backgroundColor: navBackground ? "black" : "transparent",
-                }}
+
+            <a className="navbar-brand" href="#">
+                <img className="logo"
+
+                    src={logo}
+                    alt="First slide"
+                />
+            </a>
+            <button
+                className="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
             >
-                <Navbar.Brand href="#home">
-                    <img className="logo" src={logo} alt="Netflix Logo" />
-                </Navbar.Brand>
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav mr-auto">
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/">Home</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link className="nav-link" to="/films">Films</Link>
+                    </li>
 
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav" >
-                    <Nav.Link href="#" className="text-white-50">Home</Nav.Link>
-                    <Nav.Link href="#" className="text-white-50">Films</Nav.Link>
+                    {/* <li class="nav-item">
+                        <a className="nav-link" href="#">
+                            Nieuw en populair
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">
+                            Min lijst
+                        </a>
+                    </li> */}
 
-                    <Nav className=" mr-auto- navbar-nav ml-auto">
-                        <SearchBar />
-                    </Nav>
-                    <img className="avator" src={avator} alt="avator" />
+                    {/* <!--
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+--> */}
+                </ul>
 
-                    <NavDropdown title="UserInfo" id="collasible-nav-dropdown">
 
-                        <NavDropdown.Item href="#">Something 1</NavDropdown.Item>
-                        <NavDropdown.Item href="#">Something 2</NavDropdown.Item>
-                        <NavDropdown.Item href="#">Something 3</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#">
-                            Another Action
-                        </NavDropdown.Item>
-                    </NavDropdown>
-                </Navbar.Collapse>
-            </Navbar>
+
+                <SearchBar />
+
+
+
+
+                <ul className="navbar-nav mr-auto-">
+                    <li className="nav-item dropdown">
+                        <a
+                            className="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            UserPic
+                        </a>
+                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a className="dropdown-item" href="#">
+                                Action
+                            </a>
+                            <a className="dropdown-item" href="#">
+                                Another action
+                            </a>
+                            <div className="dropdown-divider"></div>
+                            <a className="dropdown-item" href="#">
+                                Something else here
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
         </>
     );
 };

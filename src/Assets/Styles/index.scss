@@ -2,9 +2,8 @@
 //*                                                                 //
 //===================== CODDED BY EPHREM ==========================//
 // In Collaboration with Manon, Michell, Elias, Rashid & Frankie  //
-//            Ryno, Adrienn, Patrick, Izzet, Justin              //
-//========================== 2021 ==============================//
-//============================================================*//
+//========================== 2021 ===============================//
+//=============================================================*//
 
 // 1. Configuration
 
@@ -29,23 +28,17 @@
 
 // 4. Components
 
-@import "../Styles/sass/components-modules/buttons";
-@import "../Styles/sass/components-modules/contactForm";
-@import "../Styles/sass/components-modules/detailPage";
-@import "../Styles/sass/components-modules/hr";
-@import "../Styles/sass/components-modules/pricing";
-@import "../Styles/sass/components-modules/registration";
-@import "../Styles/sass/components-modules/search";
-@import "../Styles/sass/components-modules/specs";
-@import "../Styles/sass/components-modules/subscribe";
+@import "../Styles/sass/components-modules/buttons.scss";
+@import "../Styles/sass/components-modules/contactForm.scss";
+@import "../Styles/sass/components-modules/detailPage.scss";
+@import "../Styles/sass/components-modules/hr.scss";
+@import "../Styles/sass/components-modules/pricing.scss";
+@import "../Styles/sass/components-modules/registration.scss";
+@import "../Styles/sass/components-modules/search.scss";
+@import "../Styles/sass/components-modules/specs.scss";
+@import "../Styles/sass/components-modules/subscribe.scss";
 @import "../Styles/sass/components-modules/responsive";
 @import "../Styles/sass/components-modules/logo";
 @import "../Styles/sass/components-modules/featured_slider";
 @import "../Styles/sass/components-modules/cat_slider";
 @import "../Styles/sass/components-modules/social";
-
-// Newely Added
-@import "../Styles/sass/components-modules/slider";
-
-// @import "../Styles/sass/components-modules/login";
-// @import "../Styles/sass/components-modules/landing-page";

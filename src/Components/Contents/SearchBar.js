@@ -9,7 +9,7 @@ const SearchBar = (props) => {
                 id="search-box"
                 className="search-box form-control- mr-sm-2"
                 type="search"
-                placeholder="Titels, personen, genres"
+                placeholder="Search"
                 aria-label="Search"
             />
 

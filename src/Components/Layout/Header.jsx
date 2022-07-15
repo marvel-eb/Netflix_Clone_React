@@ -1,10 +1,9 @@
-import React from "react";
 import Navigation from "./Navigation";
 
 const Header = () => {
   return (
     <>
-      <div className="container-fluid bg-dark">
+      <div className="container-fluid bg-dark text-left">
         <Navigation />
       </div>
     </>

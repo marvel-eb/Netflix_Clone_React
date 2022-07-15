@@ -1,0 +1,62 @@
+.movie-card {
+  position: relative;
+
+}
+
+
+.movie-card-pop-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1.2);
+  z-index: 100;
+  background-color: $background-color-alt;
+  color: white;
+}
+
+.movie-card-buttons-container {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-card-buttons-left {
+  display: flex;
+  flex-direction: row;
+
+ 
+}
+
+.movie-card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+
+}
+
+.movie-card-button-icon {
+  font-size: 12px;
+}
+
+.movie-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.movie-details {
+  display: flex;
+  flex-direction: row;
+ 
+
+  p {margin-right: 10px;
+    font-weight: bold;
+    font-size: 0.8rem;}
+}
+
+.match-percentage {
+  color: rgb(69, 211, 105);
+ }

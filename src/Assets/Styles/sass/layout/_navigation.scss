@@ -1,1 +1,27 @@
-/*   - Sidebar - vertical Collapsable menu - */
+.navbar {
+  height: 4rem;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+.dropdown-menu {
+  background-color: #2d2d2d;
+  right: 0px !important;
+  left: unset;
+}
+
+.dropdown-item,
+a.nav-link {
+  color: #e7e7e7;
+}
+a.text-white-50.nav-link:hover {
+  color: crimson;
+}
+
+a.dropdown-item:hover {
+  background-color: #444444;
+  color: #e7e7e7;
+}
+.avator {
+  width: 40px;
+  height: 40px;
+  border-radius: 25%;
+}

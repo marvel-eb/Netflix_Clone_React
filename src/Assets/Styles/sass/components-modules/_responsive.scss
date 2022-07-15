@@ -1,7 +1,10 @@
-/*   - Media Queries - */
+// == MEDIA__QUERIES ==
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #343a40 !important;
+  }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -10,6 +13,12 @@
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .login-page {
+    width: 100%;
+  }
+  .login-page-bg {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {

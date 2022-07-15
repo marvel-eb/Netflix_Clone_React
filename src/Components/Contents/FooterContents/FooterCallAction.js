@@ -1,25 +1,33 @@
 import React from "react";
-
+// using ES6 modules
+import { Link } from "react-router-dom";
 const FooterCallaction = () => {
     return (
         <>
 
             <ul className="list-unstyled">
                 <li className="btn-link">
-                    {" "}
-                    <a>Audio en ondertiteling</a>{" "}
+                    <Link className="text-white-50" to="#">
+                        Audio en ondertiteling
+                    </Link>
+
                 </li>
                 <li className="btn-link">
-                    {" "}
-                    <a>Mediacenter</a>{" "}
+                    <Link className="text-white-50" to="#">
+                        Mediacenter
+                    </Link>
                 </li>
                 <li className="btn-link">
-                    {" "}
-                    <a>Privacy</a>{" "}
+                    <Link className="text-white-50" to="#">
+                        Privacy
+                    </Link>
+
                 </li>
                 <li className="btn-link">
-                    {" "}
-                    <a>Contact opnemen</a>{" "}
+                    <Link className="text-white-50" to="#">
+                        Contact opneme
+                    </Link>
+
                 </li>
             </ul>
             {/* <!--

@@ -1,7 +1,7 @@
+import React, { useState } from "react";
 import logo from "../../../Assets/images/netflix-logo.svg";
 import { Navbar } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
-// import FooterGuest from "../../Contents/FooterContents/FooterGuest";
+
 import { FaGlobeAmericas } from "react-icons/fa";
 
 export default function LandingPage() {
@@ -33,17 +33,14 @@ export default function LandingPage() {
     <div id="landing-page">
       <div>
         <header>
-          <Navbar.Brand className="nav">
-            <LinkContainer to="/LogInScreen">
-              <img className="logo" src={logo} alt="Netflix Logo" />
-            </LinkContainer>
+          <Navbar.Brand className="nav" href="#home">
+            <img className="logo" src={logo} alt="Netflix Logo" />
             <div className="navBtn ml-auto">
-              <button className="px-2 rounded">
+              <button>
+                {" "}
                 <FaGlobeAmericas /> Nederlands
               </button>
-              <LinkContainer to="/LogInScreen">
-                <button>Inloggen</button>
-              </LinkContainer>
+              <button>Inloggen</button>
             </div>
           </Navbar.Brand>
         </header>
@@ -210,7 +207,6 @@ export default function LandingPage() {
             />
             <button type="submit">Aan de slag &#62;</button>
           </form>
-          {/* <FooterGuest /> */}
         </div>
       </div>
     </div>

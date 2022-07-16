@@ -8,11 +8,13 @@ const LogIn = (props) => {
     return (
         <div>
 
-            <Link to="/LogInScreen">
+            <Link to="/LogIn">
                 <span>
-                    <FaUserAlt className="s-icons text-white-50" size="2em" />
+                    <FaUserAlt className="s-icons" size="2em" /> <br />
+                    LogIn
                 </span>
             </Link>
+
         </div>
     );
 };

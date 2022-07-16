@@ -2,15 +2,14 @@ import React from 'react';
 import { Col, Container, Row, Image, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { FaRegPlayCircle, FaPlus, } from 'react-icons/fa'
 
-export default function ModalFilmCard({ imgSrc, overview, releaseDate, voteAverage }) {
+export default function ModalFilmCard({ movie, imgSrc, overview, releaseDate, voteAverage }) {
 
     const ratingToPercentage = (rating) => {
         return (rating * 10).toFixed(0);
     }
 
     return (
-        <Col className="px-3 mb-5">
-        <Col className="modal-film-container px-0 mx-0">
+        <Col className="modal-film-container px-0">
             <Container fluid className="film-card-container">
                 <Row>
                     <Col xs={12} className="px-0" >
@@ -42,7 +41,6 @@ export default function ModalFilmCard({ imgSrc, overview, releaseDate, voteAvera
                     </Col>
                 </Row>
             </Container>
-        </Col>
         </Col>
     )
 }

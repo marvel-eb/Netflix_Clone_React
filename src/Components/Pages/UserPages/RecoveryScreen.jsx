@@ -5,7 +5,7 @@ import logInBg from "../../../Assets/images/Netflix-login-the-crown.jpg";
 // import Header from "../../Layout/Header";
 import FooterGuest from "../../Contents/FooterContents/FooterGuest";
 import logo from "../../../Assets/images/netflix-logo.svg";
-import { LinkContainer } from "react-router-bootstrap";
+
 import { Nav, Navbar } from "react-bootstrap";
 
 const Recovery = (props) => {
@@ -15,23 +15,20 @@ const Recovery = (props) => {
       <div className="user-auth-page-bg__holder">
         <img className="user-auth-page-bg" src={logInBg} alt="" />
       </div>
-      
+
       <Navbar
         collapseOnSelect
         expand="lg"
         variant="dark"
         className="navbar navbar-expand-lg- navbar-dark  fixed-top- text-white-50 pt-5"
       >
-        <LinkContainer to = "/">
-        <Navbar.Brand >
+        <Navbar.Brand href="#home">
           <img
             className="d-inline-block align-top logo"
             src={logo}
             alt="Netflix Logo"
           />
-        
         </Navbar.Brand>
-        </LinkContainer>
 
         <Navbar.Collapse id="basic-navbar-nav" className="px-md-5 py-md-5">
           <Nav className="mr-auto"> </Nav>
@@ -47,11 +44,11 @@ const Recovery = (props) => {
       </Navbar>
 
       <div className="container py-5">
-        <div className="row">
-          <div className="col-12 col-md-8 mx-auto">
-            <div className="jumbotron bg-transparent">
-              <div className="row text-center">
-                <div className="text-center col-12">
+        <div class="row">
+          <div class="col-12 col-md-8 mx-auto">
+            <div class="jumbotron bg-transparent">
+              <div class="row text-center">
+                <div class="text-center col-12">
                   <PasswordReset />;
                 </div>
               </div>

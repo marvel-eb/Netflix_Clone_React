@@ -4,7 +4,7 @@ import { FaSearch } from "react-icons/fa";
 
 const SearchBar = (props) => {
     return (
-        <form className="search-container my-2- my-lg-0-">
+        <form class="search-container my-2- my-lg-0-">
             <input
                 id="search-box"
                 className="search-box form-control- mr-sm-2"
@@ -13,15 +13,15 @@ const SearchBar = (props) => {
                 aria-label="Search"
             />
 
-            <label className="search-icon-container" htmlFor="search-box">
-                <span className="search-icon">
+            <label class="search-icon-container" for="search-box">
+                <span class="search-icon">
 
                     <FaSearch />
                 </span>
             </label>
 
             <button
-                className="search-btn btn- btn-outline-success- my-2- my-sm-0-"
+                class="search-btn btn- btn-outline-success- my-2- my-sm-0-"
                 type="submit"
             >
                 Search movie...

@@ -4,7 +4,7 @@
 
 > In collaboration with:<br/>
 >
-> - Front-End-Developers -- @Manon, @Elias, @Frankie, @Ryno, @Adrienn, @Joeri, @Patrick, @Justin & @Ephrem.<br/>
+> - Front-End-Developers -- @Manon, @Elias, @Frankie, @Rashid, @Ryno, @Adrienn, @Joeri, @Patrick, @Justin & @Ephrem.<br/>
 > - Back-End-Developers -- @Izzet & @Michell.
 
 TOOLS USED:
@@ -96,7 +96,7 @@ CONFIGURATION & FILE / FOLDER STRUCTURES:
 └────────────
 ```
 
-### TechGrounds Web Development, October / 2021
+### TechGrounds Web Development
 
 ![Netflix Cloning - Logo](src/Assets/images/netflix-logo.svg)
 ![Netflix Cloning - Home Page](src/Assets/images/Netflix-home-page-screenshot.png)

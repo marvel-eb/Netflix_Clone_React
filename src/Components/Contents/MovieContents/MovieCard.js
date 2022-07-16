@@ -5,14 +5,13 @@ import { Link } from 'react-router-dom';
 
 
 
-export default function MovieCard({ movie, index, isLargeRow, id, setActive, modal}) {
+export default function MovieCard({ movie, index, isLargeRow, id, props, setActive }) {
     const [isHovered, setIsHovered] = useState(false);
     const [trailerLink, setTrailerLink] = useState();
-    const [runtime, setRuntime] = useState();
-  
     const mountedStyle = {
         animation: "inAnimation 0.3s ease-out",
         animationFillMode: "forwards",
+
     }
     
   
@@ -32,7 +31,7 @@ export default function MovieCard({ movie, index, isLargeRow, id, setActive, mod
                 })
                 .catch(function (error) {
                     // handle error
-                    // console.log(error);
+                    console.log(error);
                 })
                 .then(function () {
                     // always executed
@@ -41,46 +40,6 @@ export default function MovieCard({ movie, index, isLargeRow, id, setActive, mod
         }
         fetchData();
     }, [id]);
-
-    
-    useEffect(() => {
-        const axios = require('axios');
-             // Get runtime
-             axios.get(`https://api.themoviedb.org/3/movie/${movie?.id}?api_key=${process.env.REACT_APP_NETFLIX_CLONE_API_KEY}&language=en-US`)
-             .then(function (response) {
-                 // handle success
-                 setRuntime(response.data.runtime);
-             })
-             .catch(function (error) {
-                 // handle error
-                 console.log(error);
-             })
-             .then(function () {
-                 // always executed
-             });
-
-        return () => {
-            
-        }
-    }, [id])
-
-
-
-
-    function GetRuntime() {
-        let hours = Math.floor(runtime / 60);
-        let minutes = runtime % 60;
-
-        if (hours === 0) {
-            return <>
-                <span>{minutes + "m"}</span>
-            </>
-        } else {
-            return <>
-                <span>{hours + " u " + minutes + "m"}</span>
-            </>
-        }
-    }
 
 
     return (
@@ -108,7 +67,7 @@ export default function MovieCard({ movie, index, isLargeRow, id, setActive, mod
                     style={mountedStyle}>
                     <Link to={
                         {
-                            pathname: modal.props.match.url,
+                            pathname: props.props.match.url,
                             search: `?id=${movie.id}`,
                             movie: movie
                         }}
@@ -130,7 +89,7 @@ export default function MovieCard({ movie, index, isLargeRow, id, setActive, mod
                         <div className="itemInfo">
                             {/* <Link to={
                             {
-                                pathname: modal.props.match.url,
+                                pathname: props.props.match.url,
                                 search: `?id=${movie.id}`,
                                 movie: movie
                             }}
@@ -157,7 +116,7 @@ export default function MovieCard({ movie, index, isLargeRow, id, setActive, mod
                                 <div className="movie-card-buttons-right">
                                     <Link to={
                                         {
-                                            pathname: modal.props.match.url,
+                                            pathname: props.props.match.url,
                                             search: `?id=${movie.id}`,
                                             movie: movie
                                         }}
@@ -172,12 +131,12 @@ export default function MovieCard({ movie, index, isLargeRow, id, setActive, mod
 
                                 <h2 className="movie-title">{movie.title}</h2>
                                 <div className="movie-details">
-                                     <p>{GetRuntime()}</p>
-                                    
+                                    <p>1h 17m</p>
+                                    <p>PG12</p>
                                     <p className="match-percentage">
                                         {ratingToPercentage(movie.vote_average)}% Match
                                     </p>
-                                    {/* <p>{movie.genre_ids}</p> */}
+                                    <p>{movie.genre_ids}</p>
                                 </div>
                             </div>
                         </div>

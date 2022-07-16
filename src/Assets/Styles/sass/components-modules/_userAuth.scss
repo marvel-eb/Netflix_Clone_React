@@ -109,21 +109,8 @@ input:autofill {
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-   box-shadow: 0 0 0 1000px #333 inset !important;
   -webkit-box-shadow: 0 0 0 1000px #333 inset !important;
   -webkit-text-fill-color: #f1f1f1 !important;
-}
-
-// Guest User LogIn Authentication
-
-.guest-user {
-  /*background-color: #e50a131f; */
-  border-color: #e50a1342;
-  border-width: 3 px;
-  border-style: solid;
-}
-.guest-user p {
-  font-size: 1rem;
 }
 // Error Message
 

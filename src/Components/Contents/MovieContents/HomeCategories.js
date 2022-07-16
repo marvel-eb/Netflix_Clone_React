@@ -14,40 +14,34 @@ export default function HomeCategories(props) {
 
 
             <CatSlider
-                modal={props}
+                props={props}
                 title="Zeroes"
                 fetchUrl={movieDataRequests.fetchZeroes}
             // isLargeRow
             />
 
             <CatSlider
-                modal={props}
+                props={props}
                 title="Nineties"
                 fetchUrl={movieDataRequests.fetchNineties}
             // isLargeRow
             />
             <CatSlider
-                modal={props}
+                props={props}
                 title="Eighties"
-                fetchUrl={movieDataRequests.fetchEighties}              
+                fetchUrl={movieDataRequests.fetchEighties}
             // isLargeRow
             />
             <CatSlider
-                modal={props}
+                props={props}
                 title="Disney"
-                fetchUrl={movieDataRequests.fetchDisney}          
-            // isLargeRow
-            />
-             <CatSlider
-                modal={props}
-                title="Scarlett Johansson"
-                fetchUrl={movieDataRequests.fetchActress}            
+                fetchUrl={movieDataRequests.fetchDisney}
             // isLargeRow
             />
             <CatSlider
-                modal={props}
+                props={props}
                 title="Ryan Reynolds"
-                fetchUrl={movieDataRequests.fetchActor}       
+                fetchUrl={movieDataRequests.fetchActor}
             // isLargeRow
             />
 

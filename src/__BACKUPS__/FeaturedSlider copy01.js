@@ -17,15 +17,15 @@ const FeaturedSlider = ({ image }) => {
                     <img className="d-block w-100" src={image} alt="First slide" />
 
                     <Carousel.Caption>
-                        <div class="home-buttons btn-group btn-block">
-                            <button class="btn btn-light mr-2 rounded py-3 px-5">
+                        <div className="home-buttons btn-group btn-block">
+                            <button className="btn btn-light mr-2 rounded py-3 px-5">
                                 <FaPlay /> Play
                             </button>
-                            <button class="btn btn-secondary ml-2 rounded py-3 px-5">
+                            <button className="btn btn-secondary ml-2 rounded py-3 px-5">
                                 More Information
                             </button>
                         </div>
-                        <p className="caption-text">
+                        <p classNameName="caption-text">
                             Bored and unhappy as the Lord of Hell, Lucifer Morningstar
                             abandoned his throne and retired to Los Angeles, where he has
                             teamed up with LAPD detectiv...

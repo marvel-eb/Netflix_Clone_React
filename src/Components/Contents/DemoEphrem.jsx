@@ -76,8 +76,8 @@ const CatSlider = ({ title, fetchUrl, isLargeRow, id }) => {
           This is for personal experience and educational purpose [ Removeable
           TXT! ]
         </p>
-        <div class="cat-slider__wrapper">
-          <div class="cat-slider">
+        <div className="cat-slider__wrapper">
+          <div className="cat-slider">
             <div className="movie__poster-wrapper">
               <div className="movie__posters">
                 <div className="cat-slider__arrow-left">

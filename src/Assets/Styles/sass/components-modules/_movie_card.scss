@@ -1,6 +1,11 @@
 .movie-card {
   position: relative;
   margin: 0 2px;
+  border-radius: 5px;
+}
+
+.movie-card img {
+  border-radius: 5px;
 }
 
 .movie-card:hover {
@@ -24,11 +29,7 @@
     color: white;
   }
 
- 
 }
-
-
- 
 
 .movie-card iframe {
   width: 100%;

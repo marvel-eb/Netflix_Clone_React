@@ -6,16 +6,17 @@ import LogOut from "./LogOut";
 const UserAuth = ({ children, ...otherProps }) => {
     const { currentUser } = otherProps;
     return (
+
         <div>
             {!currentUser && (
-
-                <LogIn />
-
+                <div className="header--callAction">
+                    <LogIn className="s-icons" size="2em" />
+                </div>
             )}
             {currentUser && (
-
-                <LogOut />
-
+                <div className="header--callAction text-danger">
+                    <LogOut className="s-icons" size="2em" />
+                </div>
             )}
         </div>
     );

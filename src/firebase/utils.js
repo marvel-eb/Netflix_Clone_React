@@ -9,8 +9,6 @@ import "firebase/auth";
 
 import { firebaseConfig } from "./config";
 
-
-
 const app = firebase.initializeApp(firebaseConfig); // ===
 // firebase.initializeApp(firebaseConfig); //===
 // export const db = firebase.firestore(); //===
@@ -34,12 +32,11 @@ export const handleUserProfile = async (userAuth, additionalData) => {
     const snapshot = await userRef.get();
 
     if (!snapshot.exists) {
-        const { displayName, email, phoneNumber,
-            postalCode,
-            profession } = userAuth;
+        const { displayName, email, phoneNumber, postalCode, profession } =
+            userAuth;
         const timestamp = new Date();
 
-        const userRoles = ['user']; // === admin config
+        const userRoles = ["user"]; // === admin config
 
         try {
             await userRef.set({
@@ -58,6 +55,5 @@ export const handleUserProfile = async (userAuth, additionalData) => {
     }
     return userRef;
 };
-
 
 export default app;

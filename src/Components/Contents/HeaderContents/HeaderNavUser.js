@@ -1,12 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import logo from "../../../Assets/images/netflix-logo.svg";
-
+import { Link } from "react-router-dom";
 import avator from "../../../Assets/images/Netflix-avatar.png";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
-import LogOutScreen from "../../Pages/UserPages/LogOutScreen";
 
-const HeaderNav = (props) => {
+import LogIn from "./../UserAuthContent/LogOut";
+import LogOut from "./../UserAuthContent/LogOut";
+// import UserAuth from "../../Contents/UserAuthContent/UserAuth";
+
+const HeaderNav = ({ children, ...otherProps }) => {
+    const { currentUser } = otherProps;
+
     const [navBackground, setNavBackground] = useState(false);
     const navRef = useRef();
     navRef.current = navBackground;
@@ -35,13 +40,16 @@ const HeaderNav = (props) => {
                     backgroundColor: navBackground ? "#141414" : "transparent",
                 }}
             >
-                <Navbar.Brand href="#home">
-                    <img
-                        className="d-inline-block align-top logo"
-                        src={logo}
-                        alt="Netflix Logo"
-                    />
-                </Navbar.Brand>
+                {" "}
+                <Link to="/HomeScreen">
+                    <Navbar.Brand>
+                        <img
+                            className="d-inline-block align-top logo"
+                            src={logo}
+                            alt="Netflix Logo"
+                        />
+                    </Navbar.Brand>
+                </Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse
                     id="basic-navbar-nav"
@@ -59,9 +67,13 @@ const HeaderNav = (props) => {
                         <NavDropdown.Item href="DashboardScreen">Account</NavDropdown.Item>
 
                         <NavDropdown.Item href="#">Helpcentrum</NavDropdown.Item>
-
+                        <NavDropdown.Divider />
                         <NavDropdown.Item>
-                            <LogOutScreen />
+                            {/* <UserAuth /> */}
+                            <div>
+                                {!currentUser && <LogIn />}
+                                {currentUser && <LogOut />}
+                            </div>
                         </NavDropdown.Item>
                     </NavDropdown>
                 </Navbar.Collapse>

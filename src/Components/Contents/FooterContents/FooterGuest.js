@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 const FooterGuest = () => {
     return (
         <footer className="container-fluid footer-guest text-left py-5 mt-5">
-            <div class="container text-white-50 p-4">
+            <div className="container text-white-50 p-4">
                 <p> Vragen? Bel 0800-022-9647</p> <br />
-                <div class="row">
-                    <div class="col-xl-3 col-sm-6 col-md-3">
+                <div className="row">
+                    <div className="col-xl-3 col-sm-6 col-md-3">
                         <ul className="list-unstyled">
                             <li className="btn-link">
                                 <Link to="/fq">Veelgestelde vragen</Link>
@@ -20,7 +20,7 @@ const FooterGuest = () => {
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xl-3 col-sm-6 col-md-3">
+                    <div className="col-xl-3 col-sm-6 col-md-3">
                         <ul className="list-unstyled">
                             <li className="btn-link">
                                 <Link to="/coockie">Helpcentrum</Link>
@@ -30,7 +30,7 @@ const FooterGuest = () => {
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xl-3 col-sm-6 col-md-3">
+                    <div className="col-xl-3 col-sm-6 col-md-3">
                         <ul className="list-unstyled">
                             <li className="btn-link">
                                 <Link to="/coockie">Gebruiksvoorwaarden</Link>
@@ -38,7 +38,7 @@ const FooterGuest = () => {
                         </ul>
                     </div>
 
-                    <div class="col-xl-3 col-sm-6 col-md-3">
+                    <div className="col-xl-3 col-sm-6 col-md-3">
                         <ul className="list-unstyled">
                             <li className="btn-link">
                                 <Link to="/coockie">Privacy</Link>
@@ -53,7 +53,7 @@ const FooterGuest = () => {
                         className="language-picker"
                         id="languages"
                     >
-                        <label for="language">Select Language: </label>
+                        <label htmlFor="language">Select Language: </label>
                         <option value="Nederlands">Nederlands</option>
                         <option value="English">English</option>
                     </select>

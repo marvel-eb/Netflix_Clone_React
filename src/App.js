@@ -1,22 +1,21 @@
 import React, { Component } from "react";
 import { auth, handleUserProfile } from "./firebase/utils";
 
-// GitHub Pages Hosting -- using ES6 modules //
-import {
-  HashRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
-
-// Firebase Hosting -- using ES6 modules //
+// // GitHub Pages Hosting -- using ES6 modules //
 // import {
-//   BrowserRouter as Router,
-//   Switch,
+//   HashRouter as Router,
 //   Route,
+//   Switch,
 //   Redirect,
 // } from "react-router-dom";
 
+// Firebase Hosting -- using ES6 modules //
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import HomeScreen from "./Components/Pages/MainPages/HomeScreen";
 import FilmsScreen from "./Components/Pages/MainPages/FilmsScreen";
 import ModalContent from "./Components/Contents/MovieContents/ModalContent";
